@@ -352,6 +352,7 @@ section:nth-of-type(even) { background: var(--bg-soft); }
 	line-height: 1.7;
 	box-shadow: var(--shadow-lg);
 	width: 100%;
+	height: 300px;
 }
 .terminal-bar {
 	display: flex; align-items: center; gap: .4rem;
