@@ -55,6 +55,12 @@
 			entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
 		}, { threshold: 0.12 });
 		document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		// Safety net: some in-app browsers (Instagram/Facebook) fire scroll/IntersectionObserver
+		// unreliably, which can leave sections stuck at opacity:0. Force-reveal anything still
+		// hidden after a short delay so content is never permanently invisible.
+		setTimeout(() => {
+			document.querySelectorAll('.reveal:not(.is-visible)').forEach(el => el.classList.add('is-visible'));
+		}, 2000);
 	} else {
 		document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
 	}
