@@ -68,7 +68,7 @@
 			btn.classList.add('is-active');
 			const f = btn.dataset.filter;
 			cards.forEach(c => {
-				const show = f === 'all' || c.dataset.cat === f;
+				const show = f === 'all' || c.dataset.cat.split(' ').includes(f);
 				c.style.display = show ? '' : 'none';
 			});
 		});

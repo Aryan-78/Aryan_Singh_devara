@@ -192,14 +192,18 @@
 				<button class="is-active" data-filter="all">All</button>
 				<button data-filter="web">Web</button>
 				<button data-filter="ml">ML / CV</button>
+				<button data-filter="fin">Finance</button>
 				<button data-filter="algo">Algorithms</button>
 				<button data-filter="hw">Hardware</button>
 			</div>
 
 			<div class="proj-grid">
 
-				<article class="proj-card" data-cat="ml">
-					<div class="proj-thumb empty"><i class="fa-solid fa-chart-line"></i></div>
+				<article class="proj-card" data-cat="fin ml">
+					<a class="proj-thumb" href="https://github.com/Aryan-78/RefineNifty50StockInfoData" target="_blank" rel="noopener noreferrer">
+						<span class="proj-cat">Web</span>
+						<img src="assets/images/11.png" alt="Nifty 50 Stock Predictor" loading="lazy" />
+					</a>
 					<div class="proj-body">
 						<span class="proj-cat" style="position:static; background:var(--accent-soft); color:var(--accent); width:fit-content">ML · Finance</span>
 						<h3>Nifty 50 Stock Predictor</h3>
@@ -207,6 +211,22 @@
 						<div class="proj-stack"><span>Python</span><span>XGBoost</span><span>Pandas</span><span>ML</span></div>
 						<div class="proj-actions">
 							<a class="btn" href="https://github.com/Aryan-78/RefineNifty50StockInfoData" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="proj-card" data-cat="fin web">
+					<a class="proj-thumb" href="https://kite-dashboard-three.vercel.app/demo/portfolio" target="_blank" rel="noopener noreferrer">
+						<span class="proj-cat">Web</span>
+						<img src="assets/images/10.png" alt="Bot Trader" loading="lazy" />
+					</a>
+					<div class="proj-body">
+						<span class="proj-cat" style="position:static; background:var(--accent-soft); color:var(--accent); width:fit-content">Web · Automation</span>
+						<h3>Bot Trader</h3>
+						<p>Personal automated trading platform built on insights from the Nifty 50 Stock Predictor &mdash; connects to <b>Fyers</b> via API to analyze, place, and manage trades with no human intervention, running 24/7 on an Oracle Cloud ARM VM. Sends monthly performance summaries via <b>Telegram</b> and <b>email</b>.</p>
+						<div class="proj-stack"><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>Redis</span><span>Fyers API</span></div>
+						<div class="proj-actions">
+							<a class="btn btn-primary" href="https://kite-dashboard-three.vercel.app/demo/portfolio" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
 						</div>
 					</div>
 				</article>
@@ -242,7 +262,7 @@
 					</div>
 				</article>
 
-								<article class="proj-card" data-cat="ml">
+				<article class="proj-card" data-cat="ml">
 					<div class="proj-thumb">
 						<span class="proj-cat">Computer Vision</span>
 						<img src="assets/images/snip1.PNG" alt="Face mask landmark detection" loading="lazy" />
